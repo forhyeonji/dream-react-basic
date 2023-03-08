@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export default function AppForm() {
-  const [form, setForm] = useState({ name: '', email: '' });
+  const [form, setForm] = useState({ myname: '', myemail: '' });
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(form);
@@ -16,7 +16,7 @@ export default function AppForm() {
       <input
         type="text"
         id="name"
-        name="name"
+        name="myname"
         value={form.name}
         onChange={handleChange}
       />
@@ -25,7 +25,7 @@ export default function AppForm() {
       <input
         type="email"
         id="email"
-        name="email"
+        name="myemail"
         value={form.email}
         onChange={handleChange}
       />
